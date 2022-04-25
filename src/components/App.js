@@ -60,8 +60,8 @@ const App = () => {
 
     const handleLogin = (email, password) => {
         auth.authorize(email, password)
-            .then(() => {
-                setToken();
+            .then((data) => {
+                setToken(data.token);
                 setData({
                     email: data.email,
                 });
@@ -81,9 +81,9 @@ const App = () => {
             if (jwt) {
                 auth.getContent(jwt)
                     .then((res) => {
-                        if (res && res.email) {
+                        if (res && res.data.email) {
                             setData({
-                                email: res.email,
+                                email: res.data.email,
                             });
                             setIsLogin(true);
                             history.push("/");
@@ -95,7 +95,7 @@ const App = () => {
             }
         };
         tokenCheck();
-    }, [isLogin]); // эх
+    }, [history, isLogin]);
 
     function handleEditClick() {
         setPopupEdit(true);
