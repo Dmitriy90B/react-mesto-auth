@@ -1,0 +1,5 @@
+.elements__position {
+  position: relative;
+  display: grid;
+  grid-template-rows: 282px;
+}

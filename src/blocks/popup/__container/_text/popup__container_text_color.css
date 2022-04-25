@@ -1,0 +1,7 @@
+.popup__container_text_color {
+  background-color: initial;
+  color: white;
+  box-shadow: none;
+  min-width: fit-content;
+  width: fit-content;
+}

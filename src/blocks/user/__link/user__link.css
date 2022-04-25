@@ -1,0 +1,8 @@
+.user__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user__link:hover {
+    opacity: 0.6;
+}

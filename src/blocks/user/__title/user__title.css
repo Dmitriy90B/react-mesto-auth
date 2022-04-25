@@ -1,0 +1,25 @@
+.user__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 47px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 868px) {
+    .user__title {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .user__title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 0;
+      margin-bottom: 38px;
+    }
+  }
+  
