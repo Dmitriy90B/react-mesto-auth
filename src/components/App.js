@@ -184,8 +184,8 @@ const App = () => {
                 })
                 .catch((err) => console.log(`Ошибка: ${err}`));
         }
-        handleUserInfo();
-    }, []);
+        isLogin && handleUserInfo();
+    }, [isLogin]);
 
     useEffect(() => {
         function initialCards() {
@@ -195,8 +195,8 @@ const App = () => {
                 })
                 .catch((err) => console.log(`Ошибка: ${err}`));
         }
-        initialCards();
-    }, []);
+        isLogin && initialCards();
+    }, [isLogin]);
 
     return (
         <div className="page">
