@@ -95,7 +95,7 @@ const App = () => {
             }
         };
         tokenCheck();
-    }, [history]);
+    }, [history, isLogin]);
 
     function handleEditClick() {
         setPopupEdit(true);
